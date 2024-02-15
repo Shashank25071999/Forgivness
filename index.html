@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div class="sorry">
+          <span>Every passing hour feels like an eternity without your talks and laughter. I miss you more than words can express.😔</span>
+          <span>I never wanted to see you angry or hurt because of me.😢</span>
+          <span>Please know that I deeply regret my actions.😞</span>
+          <span>Your forgiveness means more to me than anything else. I'm willing to do whatever it takes to earn back your trust and rebuild what we had.🙏</span>
+        </div>
+        <h1 class="header_text">Will you Forgive Me?</h1>
+      </div>
+      <div class="gif_container">
+        <img
+          src="https://media.tenor.com/jVlFAOGxRe0AAAAi/milk-mocha.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button
+          class="btn"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
+        >
+          No
+        </button>
+
+        <script>
+          function nextPage() {
+            window.location.href = "yes.html";
+          }
+
+          function moveButton() {
+            var x =
+              Math.random() *
+              (window.innerWidth -
+                document.getElementById("noButton").offsetWidth);
+            var y =
+              Math.random() *
+              (window.innerHeight -
+                document.getElementById("noButton").offsetHeight);
+            document.getElementById("noButton").style.left = `${x}px`;
+            document.getElementById("noButton").style.top = `${y}px`;
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
